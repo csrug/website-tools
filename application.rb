@@ -18,7 +18,7 @@ module RubyonrailsCz
       cmd << "rm -rf output/cz"
       cmd << "git fetch origin"
       cmd << "git reset origin/czech --hard"
-      cmd << "rake generate_guides ONLY=getting_started LANG=cz"
+      cmd << "rake generate_guides ONLY=getting_started LANGUAGE=cz"
       puts "Running command: " + cmd.join(' && ')
       system cmd.join(' && ')
     end
